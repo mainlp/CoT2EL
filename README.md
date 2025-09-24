@@ -1,17 +1,17 @@
-# Chain-of-Thought to Explanation-Label pairs (CoT2EL) Pipeline
+# Chain-of-Thought to Explanation-Label pairs (CoT2EL)
 This repository contains the implementation for the paper "Threading the Needle: Reweaving Chain-of-Thought Reasoning to Explain Human Label Variation", accepted to the EMNLP 2025 Main Conference as ***Oral*** Presentation. ([paper](https://arxiv.org/abs/2505.23368))
 
-![Image text](https://github.com/mainlp/MJD-Estimator/blob/main/Overall_structure_EMNLP24.png)
+![Image text](https://github.com/mainlp/CoT2EL/blob/main/main_structure.png)
 
 The repository is organized into two main projects, each contained within its own directory:
 
 `/Pipeline`: This project implements the complete 5-stage pipeline for generating, extracting, structuring, normalizing, and filtering high-quality explanations from the Chain-of-Thought reasoning of Large Language Models. As a working example, this implementation uses the DeepSeek model family for CoT and explanation generation.
 
-![Image text](https://github.com/mainlp/MJD-Estimator/blob/main/Overall_structure_EMNLP24.png)
+![Image text](https://github.com/mainlp/CoT2EL/blob/main/pipeline.png)
 
 `/Evaluation`: This project provides a comprehensive framework for conducting rank-based human label variation (HLV) evaluations on the explanations produced by the `/Pipeline`. It assesses the impact of these explanations on a model's performance in MCQA tasks across various metrics, including distribution, score, and ranking. As a working example, this implementation uses the Qwen model as the judge.
 
-![Image text](https://github.com/mainlp/MJD-Estimator/blob/main/Overall_structure_EMNLP24.png)
+![Image text](https://github.com/mainlp/CoT2EL/blob/main/evaluation.png)
 
 Both projects are designed to be modular and extensible. Researchers and developers are encouraged to adapt the code to experiment with other language models for both explanation generation and evaluation.
 
@@ -51,4 +51,4 @@ If you use this code&data, please cite the papers below:
 ```
 
 ## License 
-The code under this repository is licensed under the [Apache 2.0 License](https://github.com/mainlp/MJD-Estimator/blob/main/LICENSE).
+The code under this repository is licensed under the [Apache 2.0 License](https://github.com/mainlp/CoT2EL/blob/main/LICENSE).
