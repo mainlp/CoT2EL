@@ -1,4 +1,4 @@
-# Rank-based Human Label Validation Evaluation
+# Rank-based Human Label Variation Evaluation
 
 This project provides a comprehensive framework for evaluating the quality of AI-generated explanations for MCQA tasks using an LLM-as-a-Judge approach. It takes the structured, filtered explanations from the `Pipeline` project as input, uses a powerful model like Qwen to assess them, and calculates a suite of metrics against a human-annotated gold standard.
 
