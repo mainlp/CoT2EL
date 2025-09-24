@@ -1,0 +1,34 @@
+task_name: "SocialIQA"
+
+# --- FILE PATHS (NEEDS TO BE CONFIGURED BY USER) ---
+input_file: "/path/to/your/datasets/SIQA/siqa_ind.jsonl"
+output_dir: "./outputs/SIQA/"
+
+# --- API CONFIG (NEEDS TO BE CONFIGURED BY USER) ---
+api_key: "YOUR_DEEPSEEK_API_KEY"
+base_url: "https://api.deepseek.com"
+
+# --- PIPELINE STAGES ---
+# Stages 1 & 2: Generation and Extraction
+generation_stage_1_and_2:
+  model_s1: "deepseek-reasoner"
+  model_s2: "deepseek-reasoner"
+  prompt_template_key_s1: "siqa_s1_prompt"
+  prompt_template_key_s2: "s2_extraction_prompt"
+  output_file: "stage2_extracted_output.jsonl"
+
+# Stage 3: Structuring
+structuring_stage_3:
+  model: "deepseek-chat"
+  prompt_template_key: "markdown_to_structured_json"
+  output_file: "stage3_structured_output.jsonl"
+
+# Stage 4: Normalization
+post_processing_stage_4:
+  output_file: "stage4_standardized_output.jsonl"
+  standard_keys: ['A', 'B', 'C']
+
+# Stage 5: Filtering
+filtering_stage_5:
+  discourse_file: "/path/to/your/discourse/files/SIQA/siqa_discourse.json"
+  output_file: "final_filtered_output.jsonl"

@@ -1,0 +1,23 @@
+# Configuration for evaluating CommonsenseQA using Qwen as the judge.
+
+task_name: "cqa"
+model_name: "Qwen/Qwen2.5-7B-Instruct"
+cache_dir: "/path/to/your/huggingface/cache" # IMPORTANT: Set your cache directory
+
+# --- FILE PATHS (MUST BE CONFIGURED BY USER) ---
+# Path to the original dataset file (needed for questions/answers)
+input_baseline_file: "/path/to/your/datasets/CQA/cqa_ind.jsonl"
+# Path to the filtered explanations from the PREVIOUS project (Stage 5 output)
+input_explanation_file: "/path/to/first/project/outputs/CQA/final_filtered_output.jsonl"
+# Path to the human-annotated gold standard file
+gold_standard_file: "/path/to/your/gold_data/cqa-HJD.json" # Or cqa-score.json
+# Directory to save all outputs from this evaluation pipeline
+output_dir: "./evaluation_outputs/cqa_qwen/"
+
+# --- EVALUATION SETTINGS ---
+# Defines which raw output files to process during the 'calculate' step
+evaluation_settings:
+  baseline:
+    raw_output_file: "cqa_baseline_raw_output.jsonl"
+  with_explanations:
+    raw_output_file: "cqa_with_explanations_raw_output.jsonl"
