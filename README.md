@@ -1,5 +1,5 @@
 # Chain-of-Thought to Explanation-Label pairs (CoT2EL)
-This repository contains the implementation for the paper "Threading the Needle: Reweaving Chain-of-Thought Reasoning to Explain Human Label Variation", accepted to the [EMNLP 2025](https://2025.emnlp.org/) Main Conference as ***Oral*** Presentation. ([paper](https://arxiv.org/abs/2505.23368))
+This repository contains the implementation for the paper "Threading the Needle: Reweaving Chain-of-Thought Reasoning to Explain Human Label Variation", accepted to the [EMNLP 2025](https://2025.emnlp.org/) Main Conference as ***Oral*** Presentation. ([paper](https://aclanthology.org/2025.emnlp-main.1682/))
 
 ![Image text](https://github.com/mainlp/CoT2EL/blob/main/main_structure.png)
 
@@ -26,7 +26,7 @@ For the evaluation framework: `/Evaluation/README.md`
 ## Citation
 If you use this code&data, please cite the papers below:
 
-[Threading the Needle: Reweaving Chain-of-Thought Reasoning to Explain Human Label Variation](https://arxiv.org/abs/2505.23368)
+[Threading the Needle: Reweaving Chain-of-Thought Reasoning to Explain Human Label Variation](https://aclanthology.org/2025.emnlp-main.1682/)
 
 ```
 @inproceedings{chen-etal-2025-threading,
