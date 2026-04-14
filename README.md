@@ -29,23 +29,25 @@ If you use this code&data, please cite the papers below:
 [Threading the Needle: Reweaving Chain-of-Thought Reasoning to Explain Human Label Variation](https://arxiv.org/abs/2505.23368)
 
 ```
-@article{chen-2025-cot2el,
-  author       = {Beiduo Chen and
-                  Yang Janet Liu and
-                  Anna Korhonen and
-                  Barbara Plank},
-  title        = {Threading the Needle: Reweaving Chain-of-Thought Reasoning to Explain
-                  Human Label Variation},
-  journal      = {CoRR},
-  volume       = {abs/2505.23368},
-  year         = {2025},
-  url          = {https://doi.org/10.48550/arXiv.2505.23368},
-  doi          = {10.48550/ARXIV.2505.23368},
-  eprinttype    = {arXiv},
-  eprint       = {2505.23368},
-  timestamp    = {Sun, 29 Jun 2025 21:59:19 +0200},
-  biburl       = {https://dblp.org/rec/journals/corr/abs-2505-23368.bib},
-  bibsource    = {dblp computer science bibliography, https://dblp.org}
+@inproceedings{chen-etal-2025-threading,
+    title = "Threading the Needle: Reweaving Chain-of-Thought Reasoning to Explain Human Label Variation",
+    author = "Chen, Beiduo  and
+      Liu, Yang Janet  and
+      Korhonen, Anna  and
+      Plank, Barbara",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.1682/",
+    doi = "10.18653/v1/2025.emnlp-main.1682",
+    pages = "33111--33135",
+    ISBN = "979-8-89176-332-6"
 }
 
 ```
